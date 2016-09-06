@@ -1,5 +1,12 @@
 <div class="products-wrapper">
   <h6>All JAGUAR<sup>®</sup> Guitars ({{products.productCount}})</h6>
+  <div class="product-filter">
+    <ul>
+      <li>
+        <i class="fa fa-caret-down" aria-hidden="true"></i> Series
+      </li>
+    </ul>
+  </div>
   <div class="products">
     <div class="product" ng-repeat="productObject in products.productsArray">
       <div product title="{{productObject.title}}" image="{{productObject.images[productObject.selectedColor]}}" cost="{{productObject.cost}}" config="productObject">PRODUCT {{productObject.bodyShape}}</div>
