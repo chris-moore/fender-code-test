@@ -14,7 +14,7 @@
                 productObject.title = productObject.skuDisplayName_en[0].split(',')[0];
                 
                 // temporarily showing an image, since images returned from JSON are 403
-                productObject.images[0] = 'assets/images/guitar.jpg';
+                // productObject.images[0] = 'assets/images/guitar.jpg';
 
                 // adding a random cost to better match the .com experience
                 productObject.price = (_.random(1, 10) * 100) + 99.99;
