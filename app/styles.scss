@@ -33,6 +33,40 @@ html, body {
   background-color: $color-dark-gray;
 }
 
+
+/* Bootstrap overrides */
+.btn {
+  border: none;
+  border-radius: 0;
+  background-color: $color-medium-gray;
+  color: $color-white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 14px;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: $color-dark-gray;
+    color: $color-white;
+    opacity: .9;
+  }
+
+  &.btn-primary {
+    background-color: $color-red;
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-red;
+    }
+  }
+}
+
+.modal {
+  .modal-content {
+    border-radius: 0;
+  }
+}
+
 /* 
   Import components
 */

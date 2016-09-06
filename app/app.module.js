@@ -2,6 +2,7 @@
   angular.module('FenderCodeTest', [
     'ngAnimate',
     'FenderCodeTest.routes',
-    'FenderCodeTest.products'
+    'FenderCodeTest.products',
+    'ui.bootstrap'
   ]);
 })();
