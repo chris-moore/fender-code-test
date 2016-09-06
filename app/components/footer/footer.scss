@@ -8,6 +8,18 @@ footer.footer {
   .legal {
     margin-top: 40px;
 
+    > div {
+      @media (max-width: $screen-md-min) {
+        margin: 20px;
+        text-align: left;
+
+        a {
+          display: block;
+          margin: 0 0 5px 0;
+        }
+      }
+    }
+
     a {
       color: $color-white;
       margin: 0 5px;

@@ -9,19 +9,21 @@
       </div>
     </div>
     <div class="row info">
-      <div class="col-md-5 col-md-offset-1">
+      <div class="col-md-4 text-center">
         <h4>Specifications</h4>
         <ul>
           <li>Brand: {{::config.brand}}</li>
-          <li>Body: {{::config.bodyShape}}</li>
+          <li ng-if="config.bodyShape">Body: {{::config.bodyShape}}</li>
           <li>Series: {{::config.series}}</li>
         </ul>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-4 text-center">
         <h4>Colors</h4>
         <ul>
           <li ng-repeat="colorString in config.color_en">{{colorString}}</li>
         </ul>
+      </div>
+      <div class="col-md-4 text-center">
         <h4>Price</h4>
         <div>{{::price | currency}}</div>
       </div>

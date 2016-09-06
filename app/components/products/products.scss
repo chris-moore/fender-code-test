@@ -49,6 +49,11 @@
       border-top: 7px solid $color-black;
 
       ul {
+        
+        @media (max-width: $screen-md-max) {
+          flex-flow: row wrap;
+        }
+
         li {
           font-family: $font-alternate;
           margin: 0 auto;
