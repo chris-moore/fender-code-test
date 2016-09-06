@@ -1,0 +1,44 @@
+/* fender test scss */
+
+/*
+  Import libraries
+*/
+@import "./app/bower_components/fontawesome/scss/font-awesome";
+@import "./app/bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+
+/* Fonts */
+$font-stack: 'Open Sans', sans-serif;
+$font-alternate: 'Roboto Slab', serif;
+
+/* Colors */
+$color-black: #000;
+$color-dark-gray: #1e1e1e;
+$color-red: #d52b1e;
+$color-white: #fff;
+
+/* The starting CSS styles for the enter animation */
+.view-fade.ng-enter {
+  transition: 0.4s linear all;
+  opacity: 0;
+}
+
+/* The finishing CSS styles for the enter animation */
+.view-fade.ng-enter-active {
+  opacity: 1;
+}
+
+/* Global styles */
+html, body {
+  background-color: $color-dark-gray;
+}
+
+/* 
+  Import components
+*/
+@import "./app/components/nav-bar/nav-bar";
+@import "./app/components/banner-bar/banner-bar";
+@import "./app/components/hero/hero";
+@import "./app/components/footer/footer";
+@import "./app/views/products/products";
+
+

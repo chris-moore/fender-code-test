@@ -1,0 +1,28 @@
+{
+  "name": "Fender Code Test",
+  "version": "0.0.1",
+  "authors": [
+    "chris-moore <emerica836@gmail.com>"
+  ],
+  "description": "Responsive web test for Fender",
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    ".DS_Store"
+  ],
+  "dependencies": {
+    "fontawesome": "~4.3.0",
+    "angular": "^1.5.5",
+    "bootstrap-sass": "bootstrap-sass-official#^3.3.6",
+    "lodash": "^4.12.0",
+    "angular-ui-router": "^0.2.18",
+    "angular-animate": "^1.5.5"
+  },
+  "devDependencies": {
+  }
+}

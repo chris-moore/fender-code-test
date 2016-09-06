@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Chris Moore Fender Code Test</title>
+    <meta name="author" content="Chris Moore Fender Code Test">
+    <meta name="description" content="Chris Moore Fender Code Test">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta id="viewport" name="viewport" content="width=device-width,user-scalable=yes,initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body ng-app="FenderCodeTest">
+
+    <div class="container">
+      <div banner-bar></div>
+      <div nav-bar></div>
+      <div ui-view></div>
+      <div footer></div>
+    </div>
+
+    <!-- Vendor Libraries -->
+    <!-- build:js_lib js/libs.min.js -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/lodash/lodash.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <!-- endbuild -->
+
+    <!-- Bootstrapping -->
+    <!-- build:js_app js/app.min.js -->
+    <script src="app.module.js"></script>
+    <script src="app.routes.js"></script>
+    <script src="app.run.js"></script>
+    <script src="components/nav-bar/nav-bar.js"></script>
+    <script src="components/banner-bar/banner-bar.js"></script>
+    <script src="components/hero/hero.js"></script>
+    <script src="components/footer/footer.js"></script>
+    <script src="views/products/products-ctrl.js"></script>
+    <!-- endbuild -->
+
+  </body>
+</html>

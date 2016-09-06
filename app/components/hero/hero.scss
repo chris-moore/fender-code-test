@@ -1,0 +1,32 @@
+.hero {
+  background-color: $color-black;
+  background-image: url('assets/images/hero.jpg');
+  background-size: cover;
+  color: $color-white;
+  font-size: 13px;
+  padding: 50px;
+  text-align: center;
+  width: 100%;
+
+  p {
+    font-size: 18px;
+    font-weight: 700;
+    text-shadow: 1px 1px 4px $color-black;
+  }
+
+  p.title {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 60px;
+    text-transform: uppercase;
+  }
+
+  button {
+    background-color: $color-red;
+    border: none;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px 14px;
+    text-transform: uppercase;
+  }
+}

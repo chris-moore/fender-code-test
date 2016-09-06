@@ -1,0 +1,50 @@
+/*stop scroll when support or help is open*/
+ul.nav-bar {
+  background-color: $color-black;
+  height: 90px;
+  list-style: none;
+  margin: 0;
+  overflow-y: hidden;
+  padding: 0;
+
+  > li {
+    color: $color-white;
+    cursor: pointer;
+    height: 90px;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 90px;
+    padding: 0 30px;
+    text-transform: uppercase;
+
+    &.logo {
+      background-color: $color-red;
+      margin-right: 15px;
+      padding: 0;
+      text-align: center;
+      width: 90px;
+    }
+
+    &.search {
+      margin-left: 15px;
+      padding: 0;
+
+      img {
+        width: 181px;
+      } 
+    }
+
+    &.sign-in {
+      float: right;
+      margin-right: 20px;
+      padding: 0;
+
+      img {
+        
+        width: 240px;
+      }
+    }
+
+  }
+}
