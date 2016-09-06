@@ -38,9 +38,9 @@
           deferred.resolve({
             products: parsedArray,
             filters: [
-              {title: 'Series', items: getGroupArray(parsedArray, 'series')},
-              {title: 'Product Type', items: getGroupArray(parsedArray, 'productType')},
-              {title: 'Price', items: getGroupArray(parsedArray, 'price')}
+              {title: 'Series', items: getGroupArray(parsedArray, 'series'), id: 'series'},
+              {title: 'Product Type', items: getGroupArray(parsedArray, 'productType'), id: 'productType'},
+              {title: 'Price', items: getGroupArray(parsedArray, 'price'), id: 'price'}
             ]
           });
         }, function errorCallback(response) {

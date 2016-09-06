@@ -1,7 +1,5 @@
 (function() {
 
-  console.log("[nav-bar.js] ");
-
   angular.module('FenderCodeTest')
     .directive('navBar', navBar);
 
@@ -21,28 +19,13 @@
 
   function navBarCtrl () {
     var self = this;
-    self.page = 'TEST';
-
-    init();
-
-
-    /**
-     * Initialize the component
-     * @return {null}
-     */
-    function init () {
-      console.log("[navBarCtrl.init] ");
-    };
-
   }
 
   /**
    * Link function. Put DOM stuff here
    */
   function navBarLink (scope, element, attrs) {
-
     
-
   }
 
 })();

@@ -40,13 +40,14 @@
         &:after {
           content: '\f0d7';
           font-family: FontAwesome;
-          margin: 0px 0px 0px 10px;
+          margin: 0px 0px 0px 5px;
         };
       }
     }
 
     .sub-filters {
-      border-top: solid $color-black 7px;
+      border-top: 7px solid $color-black;
+
       ul {
         li {
           font-family: $font-alternate;
@@ -61,10 +62,20 @@
   }
 
   .filter-result {
+    border-bottom: 4px solid $color-black;
     cursor: pointer;
     font-weight: 700;
-    margin: 20px;
+    margin: 20px 0px;
+    padding-bottom: 20px;
     text-transform: uppercase;
+
+    > span {
+      margin: 0 10px;
+
+      &:hover {
+        color: $color-red;
+      };
+    }
   }
 
   .products {
@@ -82,6 +93,7 @@
       cursor: pointer;
       flex: 1;
       flex-basis: 33%;
+      flex-grow: 0;
       padding: 20px;
       text-align: center;
       width: 32%;

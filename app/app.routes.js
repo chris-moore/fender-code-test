@@ -1,6 +1,4 @@
 (function() {
-  console.log("[app.routes.js] ");
-
   angular.module('FenderCodeTest.routes', [
     'ui.router'
   ])
@@ -9,7 +7,6 @@
   routes.$inject = ['$stateProvider', '$urlRouterProvider'];
 
   function routes ($stateProvider, $urlRouterProvider) {
-    console.log("[FenderCodeTest.routes] ");
     $stateProvider
 
     // home state
