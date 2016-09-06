@@ -13,6 +13,7 @@ $font-alternate: 'Roboto Slab', serif;
 /* Colors */
 $color-black: #000;
 $color-dark-gray: #1e1e1e;
+$color-medium-gray: #808080;
 $color-red: #d52b1e;
 $color-white: #fff;
 
@@ -38,6 +39,7 @@ html, body {
 @import "./app/components/nav-bar/nav-bar";
 @import "./app/components/banner-bar/banner-bar";
 @import "./app/components/hero/hero";
+@import "./app/components/products/products";
 @import "./app/components/footer/footer";
 @import "./app/views/products/products";
 

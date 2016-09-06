@@ -1,0 +1,38 @@
+.products {
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  width: 100%;
+
+  @media (max-width: $screen-md-min) {
+    display: block;
+  }
+  
+  .product {
+    flex: 1;
+    flex-basis: 33%;
+    padding: 20px;
+    text-align: center;
+    width: 32%;
+
+    @media (max-width: $screen-md-min) {
+      width: 100%;
+    }
+
+    img {
+      margin-bottom: 20px;
+      width: 98%;
+    }
+
+    h5 {
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .cost {
+      color: $color-medium-gray;
+    }
+  }
+}
