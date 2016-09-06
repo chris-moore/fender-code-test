@@ -1,39 +1,78 @@
-.products {
+.products-wrapper {
 
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  width: 100%;
-
-  @media (max-width: $screen-md-min) {
-    display: block;
+  h6 {
+    font-family: $font-alternate;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: uppercase;
   }
-  
-  .product {
-    cursor: pointer;
-    flex: 1;
-    flex-basis: 33%;
-    padding: 20px;
-    text-align: center;
-    width: 32%;
+
+  .products {
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
 
     @media (max-width: $screen-md-min) {
-      width: 100%;
+      display: block;
     }
+    
+    .product {
+      cursor: pointer;
+      flex: 1;
+      flex-basis: 33%;
+      padding: 20px;
+      text-align: center;
+      width: 32%;
 
-    img {
-      margin-bottom: 20px;
-      width: 98%;
-    }
+      @media (max-width: $screen-md-min) {
+        width: 100%;
+      }
 
-    h5 {
-      font-size: 14px;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
+      img {
+        margin-bottom: 20px;
+        width: 98%;
+      }
 
-    .cost {
-      color: $color-medium-gray;
+      h5 {
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .cost {
+        color: $color-medium-gray;
+      }
+
+      &:hover {
+        h5 {
+          color: $color-red;
+        }
+      };
     }
   }
 }
+
+.product-modal {
+  .modal-body {
+    img.product-image {
+      margin: 20px 0;
+      width: 100%;
+    }
+
+    .info {
+      h4 {
+
+      }
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}
+
+

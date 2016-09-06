@@ -11,7 +11,8 @@
       scope: {
         title: '@',
         image: '@',
-        cost: '@'
+        cost: '@',
+        config: '='
       },
       controller: productCtrl,
       controllerAs: 'product',

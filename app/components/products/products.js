@@ -22,6 +22,7 @@
   function productsCtrl (productFactory) {
     var self = this;
     self.productsArray;
+    self.productCount = 0;
 
     init();
 
@@ -29,6 +30,7 @@
       productFactory.loadProducts().then(function success (response) {
         console.log("[productsCtrl.init] response: ", response);
         self.productsArray = response;
+        self.productCount = self.productsArray.length;
       }, function fail (response) {
         console.warn('[productsCtrl.init] failed to load products, response: ', response);
       });

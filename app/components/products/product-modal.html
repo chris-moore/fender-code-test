@@ -1,12 +1,33 @@
-<div>
+<div class="product-modal">
   <div class="modal-header">
-    <h3 class="modal-title" id="modal-title">{{title}}</h3>
+    <h3 class="modal-title">{{::title}}</h3>
   </div>
-  <div class="modal-body" id="modal-body">
-    BODY
+  <div class="modal-body">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <img class="product-image" ng-src="{{::image}}">
+      </div>
+    </div>
+    <div class="row info">
+      <div class="col-md-5 col-md-offset-1">
+        <h4>Specifications</h4>
+        <ul>
+          <li>Brand: {{::config.brand}}</li>
+          <li>Body: {{::config.bodyShape}}</li>
+          <li>Series: {{::config.series}}</li>
+        </ul>
+      </div>
+      <div class="col-md-5">
+        <h4>Colors</h4>
+        <ul>
+          <li ng-repeat="colorString in config.color_en">{{colorString}}</li>
+        </ul>
+      </div>
+    </div>
   </div>
   <div class="modal-footer">
     <button class="btn btn-primary" type="button" ng-click="productModal.ok()">Add to cart</button>
-    <button class="btn" type="button" ng-click="productModal.cancel()">Cancel</button>
+    <button class="btn btn-primary" type="button" ng-click="productModal.ok()">Play one</button>
+    <button class="btn" type="button" ng-click="productModal.cancel()">Close</button>
   </div>  
 </div>

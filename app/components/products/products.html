@@ -1,6 +1,10 @@
-<div class="products">
-  <div class="product" ng-repeat="productObject in products.productsArray">
-    <div product title="{{productObject.title}}" image="{{productObject.images[productObject.selectedColor]}}" cost="{{productObject}}">PRODUCT {{productObject.bodyShape}}</div>
+<div class="products-wrapper">
+  <h6>All JAGUAR<sup>®</sup> Guitars ({{products.productCount}})</h6>
+  <div class="products">
+    <div class="product" ng-repeat="productObject in products.productsArray">
+      <div product title="{{productObject.title}}" image="{{productObject.images[productObject.selectedColor]}}" cost="{{productObject.cost}}" config="productObject">PRODUCT {{productObject.bodyShape}}</div>
+    </div>
+    <div class="clearfix"></div>
   </div>
-  <div class="clearfix"></div>
 </div>
+

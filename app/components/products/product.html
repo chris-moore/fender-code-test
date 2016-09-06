@@ -1,10 +1,5 @@
-<div>
-  <img ng-src="assets/images/guitar.jpg">
-  <!-- <img ng-src="{{image}}"> -->
-  <h5 ng-click="product.openProductModal()">{{title}}</h5>
-  <div class="cost">$1,000.00</div>
-
-
-
-
+<div ng-click="product.openProductModal();">
+  <img ng-src="{{::image}}">
+  <h5 >{{::title}}</h5>
+  <div class="cost">{{::cost | currency}}</div>
 </div>
