@@ -2,14 +2,20 @@
   <h6>All JAGUAR<sup>®</sup> Guitars ({{products.productCount}})</h6>
   <div class="product-filter">
     <ul>
-      <li>
-        <i class="fa fa-caret-down" aria-hidden="true"></i> Series
+      <li ng-repeat="filterObject in products.filtersArray" ng-class="{'selected': filterObject.title === products.subFiltersObject.title}" ng-click="products.openSubFilter(filterObject);">
+        {{::filterObject.title}}
       </li>
     </ul>
+    <div ng-if="products.subFiltersObject" class="sub-filters">
+      <ul>
+        <li ng-repeat="itemObject in products.subFiltersObject.items" ng-click="products.selectFilter(itemObject);">{{itemObject.value}} ({{itemObject.count}})</li>
+      </ul>
+    </div>
   </div>
+  <div class="filter-result" ng-if="products.filterString" ng-click="products.filterString = ''">Filtered by: {{products.filterString}} <i class="fa fa-times" aria-hidden="true"></i></div>
   <div class="products">
-    <div class="product" ng-repeat="productObject in products.productsArray">
-      <div product title="{{productObject.title}}" image="{{productObject.images[productObject.selectedColor]}}" cost="{{productObject.cost}}" config="productObject">PRODUCT {{productObject.bodyShape}}</div>
+    <div class="product" ng-repeat="productObject in products.productsArray | filter:products.filterString">
+      <div product title="{{productObject.title}}" image="{{productObject.images[productObject.selectedColor]}}" price="{{productObject.price}}" config="productObject">PRODUCT {{productObject.bodyShape}}</div>
     </div>
     <div class="clearfix"></div>
   </div>

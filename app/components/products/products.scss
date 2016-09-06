@@ -4,7 +4,66 @@
     font-family: $font-alternate;
     font-size: 20px;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+
+  .product-filter {
+    border: solid $color-black 7px;
+    margin-bottom: 40px;
+    overflow-y: visible;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      li {
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 700;
+        margin: 0 auto;
+        padding: 10px 20px;
+        text-align: center;
+        text-transform: uppercase;
+        width: 100%;
+
+        &.selected {
+          background-color: $color-black;
+          color: $color-white;
+
+          &:after {
+            content: '\f0d8';
+          };
+        }
+
+        &:after {
+          content: '\f0d7';
+          font-family: FontAwesome;
+          margin: 0px 0px 0px 10px;
+        };
+      }
+    }
+
+    .sub-filters {
+      border-top: solid $color-black 7px;
+      ul {
+        li {
+          font-family: $font-alternate;
+          margin: 0 auto;
+          padding: 10px;
+          &:after {
+            content: '';
+          };
+        }
+      }
+    }
+  }
+
+  .filter-result {
+    cursor: pointer;
+    font-weight: 700;
+    margin: 20px;
     text-transform: uppercase;
   }
 
@@ -56,21 +115,19 @@
 }
 
 .product-modal {
+  .modal-title {
+    font-family: $font-alternate;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
   .modal-body {
     img.product-image {
       margin: 20px 0;
       width: 100%;
     }
-
-    .info {
-      h4 {
-
-      }
-      ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
+    h4 {
+      font-family: $font-alternate;
+      text-transform: uppercase;
     }
   }
 }
