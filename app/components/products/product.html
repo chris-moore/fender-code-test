@@ -1,5 +1,7 @@
 <div ng-click="product.openProductModal();">
-  <img ng-src="{{::image}}">
-  <h5 >{{::title}}</h5>
-  <div class="cost">{{::price | currency}}</div>
+  <div class="image" ng-style="{'background-image':'url({{::image}})'}"></div>
+  <div class="details">
+    <h5 >{{::title}}</h5>
+    <div class="cost">{{::price | currency}}</div>
+  </div>
 </div>

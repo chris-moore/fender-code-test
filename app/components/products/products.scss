@@ -99,6 +99,8 @@
       flex: 1;
       flex-basis: 33%;
       flex-grow: 0;
+      margin-bottom: 30px;
+      overflow: hidden;
       padding: 20px;
       text-align: center;
       width: 32%;
@@ -107,8 +109,12 @@
         width: 100%;
       }
 
-      img {
+      .image {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
         margin-bottom: 20px;
+        height: 200px;
         width: 98%;
       }
 
@@ -116,6 +122,10 @@
         font-size: 14px;
         font-weight: 700;
         text-transform: uppercase;
+      }
+
+      .details {
+        background-color: $color-white;
       }
 
       .cost {
