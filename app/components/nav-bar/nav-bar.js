@@ -9,7 +9,6 @@
       replace: true,
       templateUrl: 'components/nav-bar/nav-bar.html',
       controller: navBarCtrl,
-      link: navBarLink,
       controllerAs: 'navBar',
       bindToController: true
     };
@@ -19,13 +18,6 @@
 
   function navBarCtrl () {
     var self = this;
-  }
-
-  /**
-   * Link function. Put DOM stuff here
-   */
-  function navBarLink (scope, element, attrs) {
-    
   }
 
 })();
